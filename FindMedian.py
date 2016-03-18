@@ -1,8 +1,6 @@
 # coding: utf-8
 
 """
-    Project:    MDP
-    File:   P180
     Author: AC
     Date:   16-3-18 下午4:37
     Description:    找出任意多个int型整数的中位数
@@ -70,8 +68,6 @@ if __name__ == '__main__':
     low = -10000  # 随机整数最小值
     high = 10000  # 随机整数最大值
     nums = generate_nums(counts, low, high)
-    # nums = [30, 20, 25, 9, 63, 54, 28, 62, 67, 97, 99]
-    # nums = [41, 66, 26, 69, 50, 98, 58, 52, 43, 26, 65]
     print '生成%d个[%d, %d]范围的随机整数:' % (counts, low, high), nums
 
     splits = split_nums(nums, parts, low, high)
