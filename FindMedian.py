@@ -3,7 +3,7 @@
 """
     Author: AC
     Date:   16-3-18 下午4:37
-    Description:    找出任意多个int型整数的中位数
+    Description:    找出任意(上亿级别)多个int型整数的中位数，实际情况下分区存储应为文件存储
 """
 import random
 
@@ -45,7 +45,7 @@ def split_nums(_nums, _parts, l, h):
 def get_result(_splits, _counts):
     ave_pos = (_counts+1) / 2   # 中位数大概位置
     count = 0  # 记录浏览过的分区中数字的总数目
-    area = 0  # 记录中文数所在分区的标号
+    area = 0  # 记录中位数所在分区的标号
     print '中位数(中间位置)的下标为%d' % ave_pos
     for i in _splits:
         if count < ave_pos:
